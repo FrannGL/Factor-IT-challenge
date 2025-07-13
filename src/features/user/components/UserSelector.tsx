@@ -6,7 +6,9 @@ export function UserSelector() {
   const user = useUserStore((state) => state.user);
   const setUser = useUserStore((state) => state.setUser);
 
-  const selectedKey = Object.entries(users).find(([, u]) => u === user)?.[0];
+  const selectedKey =
+    Object.entries(users).find(([, u]) => u.email === user.email)?.[0] ||
+    "user1";
 
   return (
     <select

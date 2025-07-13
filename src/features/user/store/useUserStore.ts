@@ -4,6 +4,7 @@ import { persist } from "zustand/middleware";
 import type { User, Purchase } from "../interfaces/";
 import { users, type UserKey } from "@/data/users";
 import { useCartStore } from "@/features/cart/store/useCartStore";
+import { getInitialUser } from "../utils/getInitialUser";
 
 type UserStore = {
   user: User;
@@ -14,7 +15,7 @@ type UserStore = {
 export const useUserStore = create<UserStore>()(
   persist(
     (set) => ({
-      user: users["user1"],
+      user: getInitialUser(),
 
       setUser: (key) => {
         useCartStore.getState().clearCart();
