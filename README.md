@@ -1,69 +1,100 @@
-# React + TypeScript + Vite
+# 🛒 Factor IT Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de e-commerce moderno desarrollado en **React 19 + Vite**, con enfoque en rendimiento, diseño responsive, y una arquitectura mantenible basada en componentes y estados globales.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Herramienta            | Descripción                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------------- |
+| **React 19**           | Biblioteca principal para construir la UI                                          |
+| **Vite 7**             | Empaquetador ultra rápido con soporte moderno                                      |
+| **TypeScript**         | Tipado estático para mayor robustez y autocompletado                               |
+| **Tailwind CSS 4**     | Framework de estilos utilitario con soporte para dark mode                         |
+| **shadcn/ui**          | Componentes UI accesibles y estilizados, construidos sobre Radix UI y Tailwind CSS |
+| **Zustand**            | Manejo de estado global simple y escalable                                         |
+| **React Router DOM 7** | Enrutamiento declarativo para SPAs                                                 |
+| **Framer Motion**      | Animaciones suaves y accesibles                                                    |
+| **Radix UI**           | Componentes accesibles de bajo nivel (Dialog, ScrollArea, Switch, etc.)            |
+| **Iconify + Lucide**   | Sistema flexible de íconos                                                         |
+| **Sonner**             | Notificaciones modernas y configurables                                            |
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Sigue estos pasos para instalar y ejecutar el proyecto **Patrimonio** en tu entorno local:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Clonar el repositorio
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Primero, clona el repositorio desde GitHub utilizando el siguiente comando:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+git clone https://github.com/FrannGL/Factor-IT-challenge
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Navegar al directorio del proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Accede al directorio del proyecto clonado:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+cd Factor-IT-challenge
+```
+
+### 3. Instalar dependencias
+
+Instala las dependencias necesarias ejecutando:
+
+```
+pnpm install
+```
+
+### 4. Ejecutar en modo desarrollo
+
+Inicia el servidor de desarrollo con el siguiente comando:
+
+```
+npm run dev
+```
+
+La aplicación estará disponible en http://localhost:5173.
+
+Con estos pasos, tendrás la aplicación lista para su uso. Si encuentras algún problema, consulta la sección de problemas comunes en la documentación o abre un issue en el repositorio.
+
+# Docker
+
+Si prefieres ejecutar el proyecto en un contenedor Docker, puedes usar la configuración proporcionada.
+
+### Construir la imagen Docker
+
+1. Primero, asegúrate de tener Docker instalado en tu sistema.
+
+2. En el directorio raíz del proyecto, ejecuta el siguiente comando para construir la imagen:
+
+```
+docker build -t factor-it-challenge .
+```
+
+### Ejecutar el contenedor
+
+Después de construir la imagen, ejecuta el contenedor con:
+
+```
+docker run -p 3000:80 factor-it-challenge
+```
+
+La aplicación estará disponible en http://localhost:3000.
+
+## Ejecutar tests 🧪
+
+El proyecto está preparado para testing con:
+
+- **Vitest** – Framework de testeo rápido y compatible con Jest.
+- **Testing Library** – Utilidades para testear componentes React desde la perspectiva del usuario.
+- **JSDOM** – Entorno simulado para pruebas en Node.
+- **Husky** – Ganchos de Git para asegurar calidad (como correr tests o linting antes de hacer push).
+
+### Comandos para correr tests:
+
+- `npm run test`  
+  Ejecuta todos los tests en modo _headless_ (sin interfaz gráfica), ideal para integración continua o para correr en la terminal.
+
+- `npm run test:ui`  
+  Ejecuta los tests en modo interactivo con interfaz gráfica, permitiendo ver resultados en tiempo real y hacer debugging más fácil.

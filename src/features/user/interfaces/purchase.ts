@@ -1,4 +1,4 @@
-import type { Product } from "@/features/product/interfaces/product";
+import type { Product } from "@/features/product/interfaces/product.interface";
 
 export interface Purchase {
   ticketNumber: string;

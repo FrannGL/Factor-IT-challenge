@@ -12,19 +12,20 @@ export function ProductImages({
   onPrev: () => void;
   onNext: () => void;
 }) {
+  const isFirstRender = currentIndex === 0;
   const currentImage = allImages[currentIndex];
 
   return (
-    <div className="relative w-full h-85">
+    <div className="relative w-full aspect-[4/5] overflow-hidden rounded-t-lg">
       <AnimatePresence mode="wait">
         <motion.img
           key={currentImage.url}
           src={currentImage.url}
           alt={`Imagen color ${currentImage.color}`}
-          loading="lazy"
+          loading={currentIndex === 0 ? "eager" : "lazy"}
           decoding="async"
           className="absolute top-0 left-0 w-full h-full object-cover"
-          initial={{ opacity: 0, scale: 0.98 }}
+          initial={isFirstRender ? false : { opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.1, ease: "easeInOut" }}

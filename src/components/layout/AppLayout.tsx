@@ -8,7 +8,10 @@ export function AppLayout() {
 
   return (
     <div className="flex h-screen dark:bg-background dark:text-foreground">
-      <Sidebar />
+      <div className="hidden md:block">
+        <Sidebar />
+      </div>
+
       <main className="flex-1 flex flex-col bg-background text-foreground">
         <Topbar />
         <div className="flex-1 overflow-auto">

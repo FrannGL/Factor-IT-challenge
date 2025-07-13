@@ -59,7 +59,9 @@ export function UserPurchasesDialog({ open, onOpenChange, user }: Props) {
                           className="w-12 h-12 object-cover rounded"
                         />
                         <div>
-                          <p className="font-medium">{product.name}</p>
+                          <p className="font-medium">
+                            {product.quantity}× {product.name}
+                          </p>
                           <p className="text-xs text-muted-foreground">
                             {product.category} — ${product.price}
                           </p>

@@ -1,4 +1,4 @@
-import type { Product } from "@/features/product/interfaces/product";
+import type { Product } from "@/features/product/interfaces/product.interface";
 
 export const products: Product[] = [
   {
@@ -13,15 +13,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/hoodies/1-01-m.jpg"],
+        images: ["/assets/hoodies/1-01-m.webp"],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/1-04-m.jpg"],
+        images: ["/assets/hoodies/1-04-m.webp"],
       },
       {
         name: "green",
-        images: ["/assets/hoodies/1-05-m.jpg"],
+        images: ["/assets/hoodies/1-05-m.webp"],
       },
     ],
   },
@@ -37,15 +37,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/hoodies/1-02-w.jpg"],
+        images: ["/assets/hoodies/1-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/1-03-w.jpg"],
+        images: ["/assets/hoodies/1-03-w.webp"],
       },
       {
         name: "green",
-        images: ["/assets/hoodies/1-06-w.jpg"],
+        images: ["/assets/hoodies/1-06-w.webp"],
       },
     ],
   },
@@ -61,11 +61,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/hoodies/2-01-m.jpg", "/assets/hoodies/2-02-m.jpg"],
+        images: ["/assets/hoodies/2-01-m.webp", "/assets/hoodies/2-02-m.webp"],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/2-04-m.jpg", "/assets/hoodies/2-03-m.jpg"],
+        images: ["/assets/hoodies/2-04-m.webp", "/assets/hoodies/2-03-m.webp"],
       },
     ],
   },
@@ -81,7 +81,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/hoodies/3-01-m.jpg", "/assets/hoodies/3-02-m.jpg"],
+        images: ["/assets/hoodies/3-01-m.webp", "/assets/hoodies/3-02-m.webp"],
       },
     ],
   },
@@ -97,15 +97,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/hoodies/4-03-w.jpg", "/assets/hoodies/4-04-w.jpg"],
+        images: ["/assets/hoodies/4-03-w.webp", "/assets/hoodies/4-04-w.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/hoodies/4-01-w.jpg", "/assets/hoodies/4-02-w.jpg"],
+        images: ["/assets/hoodies/4-01-w.webp", "/assets/hoodies/4-02-w.webp"],
       },
       {
         name: "green",
-        images: ["/assets/hoodies/4-05-w.jpg", "/assets/hoodies/4-06-w.jpg"],
+        images: ["/assets/hoodies/4-05-w.webp", "/assets/hoodies/4-06-w.webp"],
       },
     ],
   },
@@ -121,11 +121,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/hoodies/5-01-w.jpg", "/assets/hoodies/5-02-w.jpg"],
+        images: ["/assets/hoodies/5-01-w.webp", "/assets/hoodies/5-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/5-03-w.jpg", "/assets/hoodies/5-04-w.jpg"],
+        images: ["/assets/hoodies/5-03-w.webp", "/assets/hoodies/5-04-w.webp"],
       },
     ],
   },
@@ -141,7 +141,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/6-01-m.jpg", "/assets/hoodies/6-02-m.jpg"],
+        images: ["/assets/hoodies/6-01-m.webp", "/assets/hoodies/6-02-m.webp"],
       },
     ],
   },
@@ -157,7 +157,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/6-03-w.jpg", "/assets/hoodies/6-04-w.jpg"],
+        images: ["/assets/hoodies/6-03-w.webp", "/assets/hoodies/6-04-w.webp"],
       },
     ],
   },
@@ -173,7 +173,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/7-01-m.jpg", "/assets/hoodies/7-02-m.jpg"],
+        images: ["/assets/hoodies/7-01-m.webp", "/assets/hoodies/7-02-m.webp"],
       },
     ],
   },
@@ -189,7 +189,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/8-01-m.jpg", "/assets/hoodies/8-02-m.jpg"],
+        images: ["/assets/hoodies/8-01-m.webp", "/assets/hoodies/8-02-m.webp"],
       },
     ],
   },
@@ -205,7 +205,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/9-01-m.jpg", "/assets/hoodies/9-02-m.jpg"],
+        images: ["/assets/hoodies/9-01-m.webp", "/assets/hoodies/9-02-m.webp"],
       },
     ],
   },
@@ -221,7 +221,10 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/10-01-m.jpg", "/assets/hoodies/10-02-m.jpg"],
+        images: [
+          "/assets/hoodies/10-01-m.webp",
+          "/assets/hoodies/10-02-m.webp",
+        ],
       },
     ],
   },
@@ -237,15 +240,24 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/11-01-m.jpg", "/assets/hoodies/11-02-m.jpg"],
+        images: [
+          "/assets/hoodies/11-01-m.webp",
+          "/assets/hoodies/11-02-m.webp",
+        ],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/11-05-m.jpg", "/assets/hoodies/11-06-m.jpg"],
+        images: [
+          "/assets/hoodies/11-05-m.webp",
+          "/assets/hoodies/11-06-m.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/hoodies/11-03-m.jpg", "/assets/hoodies/11-04-m.jpg"],
+        images: [
+          "/assets/hoodies/11-03-m.webp",
+          "/assets/hoodies/11-04-m.webp",
+        ],
       },
     ],
   },
@@ -261,7 +273,10 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/12-01-w.jpg", "/assets/hoodies/12-02-w.jpg"],
+        images: [
+          "/assets/hoodies/12-01-w.webp",
+          "/assets/hoodies/12-02-w.webp",
+        ],
       },
     ],
   },
@@ -277,15 +292,24 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/hoodies/13-01-m.jpg", "/assets/hoodies/13-02-m.jpg"],
+        images: [
+          "/assets/hoodies/13-01-m.webp",
+          "/assets/hoodies/13-02-m.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/hoodies/13-03-m.jpg", "/assets/hoodies/13-04-m.jpg"],
+        images: [
+          "/assets/hoodies/13-03-m.webp",
+          "/assets/hoodies/13-04-m.webp",
+        ],
       },
       {
         name: "white",
-        images: ["/assets/hoodies/13-05-m.jpg", "/assets/hoodies/13-06-m.jpg"],
+        images: [
+          "/assets/hoodies/13-05-m.webp",
+          "/assets/hoodies/13-06-m.webp",
+        ],
       },
     ],
   },
@@ -301,35 +325,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/1.1.jpg", "/assets/accessories/1.1.jpg"],
+        images: [
+          "/assets/accessories/1.1.webp",
+          "/assets/accessories/1.1.webp",
+        ],
       },
       {
         name: "white",
         images: [
-          "/assets/accessories/1.3.jpg",
-          "/assets/accessories/1.4.jpg",
-          "/assets/accessories/1.11.jpg",
-          "/assets/accessories/1.12.jpg",
+          "/assets/accessories/1.3.webp",
+          "/assets/accessories/1.4.webp",
+          "/assets/accessories/1.11.webp",
+          "/assets/accessories/1.12.webp",
         ],
       },
       {
         name: "green",
-        images: ["/assets/accessories/1.5.jpg", "/assets/accessories/1.6.jpg"],
+        images: [
+          "/assets/accessories/1.5.webp",
+          "/assets/accessories/1.6.webp",
+        ],
       },
       {
         name: "black",
         images: [
-          "/assets/accessories/1.7.jpg",
-          "/assets/accessories/1.8.jpg",
-          "/assets/accessories/1.9.jpg",
-          "/assets/accessories/1.10.jpg",
+          "/assets/accessories/1.7.webp",
+          "/assets/accessories/1.8.webp",
+          "/assets/accessories/1.9.webp",
+          "/assets/accessories/1.10.webp",
         ],
       },
       {
         name: "red",
         images: [
-          "/assets/accessories/1.13.jpg",
-          "/assets/accessories/1.14.jpg",
+          "/assets/accessories/1.13.webp",
+          "/assets/accessories/1.14.webp",
         ],
       },
     ],
@@ -346,11 +376,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/accessories/2.1.jpg", "/assets/accessories/2.2.jpg"],
+        images: [
+          "/assets/accessories/2.1.webp",
+          "/assets/accessories/2.2.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/accessories/2.3.jpg", "/assets/accessories/2.4.jpg"],
+        images: [
+          "/assets/accessories/2.3.webp",
+          "/assets/accessories/2.4.webp",
+        ],
       },
     ],
   },
@@ -366,11 +402,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/3.1.jpg", "/assets/accessories/3.2.jpg"],
+        images: [
+          "/assets/accessories/3.1.webp",
+          "/assets/accessories/3.2.webp",
+        ],
       },
       {
         name: "white",
-        images: ["/assets/accessories/3.3.jpg", "/assets/accessories/3.4.jpg"],
+        images: [
+          "/assets/accessories/3.3.webp",
+          "/assets/accessories/3.4.webp",
+        ],
       },
     ],
   },
@@ -386,7 +428,10 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/4.1.jpg", "/assets/accessories/4.2.jpg"],
+        images: [
+          "/assets/accessories/4.1.webp",
+          "/assets/accessories/4.2.webp",
+        ],
       },
     ],
   },
@@ -402,7 +447,10 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/5.1.jpg", "/assets/accessories/5.2.jpg"],
+        images: [
+          "/assets/accessories/5.1.webp",
+          "/assets/accessories/5.2.webp",
+        ],
       },
     ],
   },
@@ -418,11 +466,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/6.1.jpg", "/assets/accessories/6.2.jpg"],
+        images: [
+          "/assets/accessories/6.1.webp",
+          "/assets/accessories/6.2.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/accessories/6.3.jpg", "/assets/accessories/6.4.jpg"],
+        images: [
+          "/assets/accessories/6.3.webp",
+          "/assets/accessories/6.4.webp",
+        ],
       },
     ],
   },
@@ -438,11 +492,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/7.1.jpg", "/assets/accessories/7.2.jpg"],
+        images: [
+          "/assets/accessories/7.1.webp",
+          "/assets/accessories/7.2.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/accessories/7.3.jpg", "/assets/accessories/7.4.jpg"],
+        images: [
+          "/assets/accessories/7.3.webp",
+          "/assets/accessories/7.4.webp",
+        ],
       },
     ],
   },
@@ -458,11 +518,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/accessories/8.1.jpg", "/assets/accessories/8.2.jpg"],
+        images: [
+          "/assets/accessories/8.1.webp",
+          "/assets/accessories/8.2.webp",
+        ],
       },
       {
         name: "red",
-        images: ["/assets/accessories/8.3.jpg", "/assets/accessories/8.4.jpg"],
+        images: [
+          "/assets/accessories/8.3.webp",
+          "/assets/accessories/8.4.webp",
+        ],
       },
     ],
   },
@@ -478,11 +544,17 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/9.1.jpg", "/assets/accessories/9.2.jpg"],
+        images: [
+          "/assets/accessories/9.1.webp",
+          "/assets/accessories/9.2.webp",
+        ],
       },
       {
         name: "gray",
-        images: ["/assets/accessories/9.3.jpg", "/assets/accessories/9.4.jpg"],
+        images: [
+          "/assets/accessories/9.3.webp",
+          "/assets/accessories/9.4.webp",
+        ],
       },
     ],
   },
@@ -499,15 +571,15 @@ export const products: Product[] = [
       {
         name: "gray",
         images: [
-          "/assets/accessories/10.1.jpg",
-          "/assets/accessories/10.2.jpg",
+          "/assets/accessories/10.1.webp",
+          "/assets/accessories/10.2.webp",
         ],
       },
       {
         name: "white",
         images: [
-          "/assets/accessories/10.3.jpg",
-          "/assets/accessories/10.4.jpg",
+          "/assets/accessories/10.3.webp",
+          "/assets/accessories/10.4.webp",
         ],
       },
     ],
@@ -525,15 +597,15 @@ export const products: Product[] = [
       {
         name: "black",
         images: [
-          "/assets/accessories/11.1.jpg",
-          "/assets/accessories/11.2.jpg",
+          "/assets/accessories/11.1.webp",
+          "/assets/accessories/11.2.webp",
         ],
       },
       {
         name: "white",
         images: [
-          "/assets/accessories/11.3.jpg",
-          "/assets/accessories/11.4.jpg",
+          "/assets/accessories/11.3.webp",
+          "/assets/accessories/11.4.webp",
         ],
       },
     ],
@@ -550,7 +622,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/12.1.jpg"],
+        images: ["/assets/accessories/12.1.webp"],
       },
     ],
   },
@@ -566,7 +638,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/13.1.jpg"],
+        images: ["/assets/accessories/13.1.webp"],
       },
     ],
   },
@@ -582,7 +654,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/14.1.jpg"],
+        images: ["/assets/accessories/14.1.webp"],
       },
     ],
   },
@@ -598,7 +670,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/15.1.jpg"],
+        images: ["/assets/accessories/15.1.webp"],
       },
     ],
   },
@@ -614,7 +686,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/accessories/16.1.jpg"],
+        images: ["/assets/accessories/16.1.webp"],
       },
     ],
   },
@@ -630,7 +702,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/accessories/17.1.jpg"],
+        images: ["/assets/accessories/17.1.webp"],
       },
     ],
   },
@@ -646,15 +718,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/1-01-w.jpg", "/assets/shirts/1-02-w.jpg"],
+        images: ["/assets/shirts/1-01-w.webp", "/assets/shirts/1-02-w.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/1-03-w.jpg", "/assets/shirts/1-04-w.jpg"],
+        images: ["/assets/shirts/1-03-w.webp", "/assets/shirts/1-04-w.webp"],
       },
       {
         name: "red",
-        images: ["/assets/shirts/1-05-w.jpg", "/assets/shirts/1-06-w.jpg"],
+        images: ["/assets/shirts/1-05-w.webp", "/assets/shirts/1-06-w.webp"],
       },
     ],
   },
@@ -670,15 +742,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/2-01-w.jpg"],
+        images: ["/assets/shirts/2-01-w.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/2-02-w.jpg"],
+        images: ["/assets/shirts/2-02-w.webp"],
       },
       {
         name: "red",
-        images: ["/assets/shirts/2-03-w.jpg"],
+        images: ["/assets/shirts/2-03-w.webp"],
       },
     ],
   },
@@ -695,9 +767,9 @@ export const products: Product[] = [
       {
         name: "black",
         images: [
-          "/assets/shirts/3-01-m.jpg",
-          "/assets/shirts/3-02-m.jpg",
-          "/assets/shirts/3-02-m.jpg",
+          "/assets/shirts/3-01-m.webp",
+          "/assets/shirts/3-02-m.webp",
+          "/assets/shirts/3-02-m.webp",
         ],
       },
     ],
@@ -714,7 +786,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/4-01-w.jpg"],
+        images: ["/assets/shirts/4-01-w.webp"],
       },
     ],
   },
@@ -730,7 +802,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/5-01-m.jpg", "/assets/shirts/5-02-m.jpg"],
+        images: ["/assets/shirts/5-01-m.webp", "/assets/shirts/5-02-m.webp"],
       },
     ],
   },
@@ -746,7 +818,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/6-01-m.jpg", "/assets/shirts/6-02-m.jpg"],
+        images: ["/assets/shirts/6-01-m.webp", "/assets/shirts/6-02-m.webp"],
       },
     ],
   },
@@ -762,7 +834,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/7-01-m.jpg", "/assets/shirts/7-02-m.jpg"],
+        images: ["/assets/shirts/7-01-m.webp", "/assets/shirts/7-02-m.webp"],
       },
     ],
   },
@@ -778,11 +850,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/8-01-m.jpg", "/assets/shirts/8-02-m.jpg"],
+        images: ["/assets/shirts/8-01-m.webp", "/assets/shirts/8-02-m.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/8-03-m.jpg"],
+        images: ["/assets/shirts/8-03-m.webp"],
       },
     ],
   },
@@ -798,7 +870,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/9-01-m.jpg", "/assets/shirts/9-02-m.jpg"],
+        images: ["/assets/shirts/9-01-m.webp", "/assets/shirts/9-02-m.webp"],
       },
     ],
   },
@@ -814,7 +886,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/10-01-w.jpg", "/assets/shirts/10-02-w.jpg"],
+        images: ["/assets/shirts/10-01-w.webp", "/assets/shirts/10-02-w.webp"],
       },
     ],
   },
@@ -830,7 +902,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/11-01-w.jpg", "/assets/shirts/11-02-w.jpg"],
+        images: ["/assets/shirts/11-01-w.webp", "/assets/shirts/11-02-w.webp"],
       },
     ],
   },
@@ -846,7 +918,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/12-01-m.jpg", "/assets/shirts/12-02-m.jpg"],
+        images: ["/assets/shirts/12-01-m.webp", "/assets/shirts/12-02-m.webp"],
       },
     ],
   },
@@ -862,7 +934,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/13-01-m.jpg", "/assets/shirts/13-02-m.jpg"],
+        images: ["/assets/shirts/13-01-m.webp", "/assets/shirts/13-02-m.webp"],
       },
     ],
   },
@@ -878,7 +950,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/14-01-w.jpg", "/assets/shirts/14-02-w.jpg"],
+        images: ["/assets/shirts/14-01-w.webp", "/assets/shirts/14-02-w.webp"],
       },
     ],
   },
@@ -894,7 +966,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/15-01-w.jpg", "/assets/shirts/15-02-w.jpg"],
+        images: ["/assets/shirts/15-01-w.webp", "/assets/shirts/15-02-w.webp"],
       },
     ],
   },
@@ -910,15 +982,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/16-01-m.jpg", "/assets/shirts/16-02-m.jpg"],
+        images: ["/assets/shirts/16-01-m.webp", "/assets/shirts/16-02-m.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/16-03-m.jpg", "/assets/shirts/16-04-m.jpg"],
+        images: ["/assets/shirts/16-03-m.webp", "/assets/shirts/16-04-m.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/16-05-m.jpg", "/assets/shirts/16-06-m.jpg"],
+        images: ["/assets/shirts/16-05-m.webp", "/assets/shirts/16-06-m.webp"],
       },
     ],
   },
@@ -934,7 +1006,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/17-01-m.jpg"],
+        images: ["/assets/shirts/17-01-m.webp"],
       },
     ],
   },
@@ -950,7 +1022,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/18-01-m.jpg"],
+        images: ["/assets/shirts/18-01-m.webp"],
       },
     ],
   },
@@ -966,7 +1038,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/19-01-m.jpg"],
+        images: ["/assets/shirts/19-01-m.webp"],
       },
     ],
   },
@@ -982,7 +1054,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/20-01-m.jpg"],
+        images: ["/assets/shirts/20-01-m.webp"],
       },
     ],
   },
@@ -998,15 +1070,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/21-01-m.jpg", "/assets/shirts/21-02-m.jpg"],
+        images: ["/assets/shirts/21-01-m.webp", "/assets/shirts/21-02-m.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/21-03-m.jpg", "/assets/shirts/21-04-m.jpg"],
+        images: ["/assets/shirts/21-03-m.webp", "/assets/shirts/21-04-m.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/21-05-m.jpg", "/assets/shirts/21-06-m.jpg"],
+        images: ["/assets/shirts/21-05-m.webp", "/assets/shirts/21-06-m.webp"],
       },
     ],
   },
@@ -1022,7 +1094,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/22-01-w.jpg", "/assets/shirts/22-02-w.jpg"],
+        images: ["/assets/shirts/22-01-w.webp", "/assets/shirts/22-02-w.webp"],
       },
     ],
   },
@@ -1038,7 +1110,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "white",
-        images: ["/assets/shirts/23-01-w.jpg", "/assets/shirts/23-02-w.jpg"],
+        images: ["/assets/shirts/23-01-w.webp", "/assets/shirts/23-02-w.webp"],
       },
     ],
   },
@@ -1054,11 +1126,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/24-01-w.jpg", "/assets/shirts/24-02-w.jpg"],
+        images: ["/assets/shirts/24-01-w.webp", "/assets/shirts/24-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/24-03-w.jpg", "/assets/shirts/24-04-w.jpg"],
+        images: ["/assets/shirts/24-03-w.webp", "/assets/shirts/24-04-w.webp"],
       },
     ],
   },
@@ -1074,20 +1146,20 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/25-01-w.jpg", "/assets/shirts/25-02-w.jpg"],
+        images: ["/assets/shirts/25-01-w.webp", "/assets/shirts/25-02-w.webp"],
       },
       {
         name: "black",
         images: [
-          "/assets/shirts/25-03-w.jpg",
-          "/assets/shirts/25-04-w.jpg",
-          "/assets/shirts/25-05-w.jpg",
-          "/assets/shirts/25-06-w.jpg",
+          "/assets/shirts/25-03-w.webp",
+          "/assets/shirts/25-04-w.webp",
+          "/assets/shirts/25-05-w.webp",
+          "/assets/shirts/25-06-w.webp",
         ],
       },
       {
         name: "white",
-        images: ["/assets/shirts/25-07-w.jpg", "/assets/shirts/25-08-w.jpg"],
+        images: ["/assets/shirts/25-07-w.webp", "/assets/shirts/25-08-w.webp"],
       },
     ],
   },
@@ -1103,11 +1175,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/26-01-w.jpg", "/assets/shirts/26-02-w.jpg"],
+        images: ["/assets/shirts/26-01-w.webp", "/assets/shirts/26-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/26-03-w.jpg", "/assets/shirts/26-04-w.jpg"],
+        images: ["/assets/shirts/26-03-w.webp", "/assets/shirts/26-04-w.webp"],
       },
     ],
   },
@@ -1123,7 +1195,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/27-01-w.jpg", "/assets/shirts/27-02-w.jpg"],
+        images: ["/assets/shirts/27-01-w.webp", "/assets/shirts/27-02-w.webp"],
       },
     ],
   },
@@ -1139,11 +1211,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/28-01-m.jpg", "/assets/shirts/28-02-m.jpg"],
+        images: ["/assets/shirts/28-01-m.webp", "/assets/shirts/28-02-m.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/28-03-m.jpg", "/assets/shirts/28-04-m.jpg"],
+        images: ["/assets/shirts/28-03-m.webp", "/assets/shirts/28-04-m.webp"],
       },
     ],
   },
@@ -1160,19 +1232,19 @@ export const products: Product[] = [
       {
         name: "white",
         images: [
-          "/assets/shirts/29-01-m.jpg",
-          "/assets/shirts/29-02-m.jpg",
-          "/assets/shirts/29-07-m.jpg",
-          "/assets/shirts/29-08-m.jpg",
+          "/assets/shirts/29-01-m.webp",
+          "/assets/shirts/29-02-m.webp",
+          "/assets/shirts/29-07-m.webp",
+          "/assets/shirts/29-08-m.webp",
         ],
       },
       {
         name: "black",
-        images: ["/assets/shirts/29-03-m.jpg", "/assets/shirts/29-04-m.jpg"],
+        images: ["/assets/shirts/29-03-m.webp", "/assets/shirts/29-04-m.webp"],
       },
       {
         name: "gray",
-        images: ["/assets/shirts/29-05-m.jpg", "/assets/shirts/29-06-m.jpg"],
+        images: ["/assets/shirts/29-05-m.webp", "/assets/shirts/29-06-m.webp"],
       },
     ],
   },
@@ -1188,11 +1260,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/30-01-w.jpg", "/assets/shirts/30-02-w.jpg"],
+        images: ["/assets/shirts/30-01-w.webp", "/assets/shirts/30-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/30-03-w.jpg", "/assets/shirts/30-04-w.jpg"],
+        images: ["/assets/shirts/30-03-w.webp", "/assets/shirts/30-04-w.webp"],
       },
     ],
   },
@@ -1208,11 +1280,11 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/31-01-w.jpg", "/assets/shirts/31-02-w.jpg"],
+        images: ["/assets/shirts/31-01-w.webp", "/assets/shirts/31-02-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/31-03-w.jpg", "/assets/shirts/31-04-w.jpg"],
+        images: ["/assets/shirts/31-03-w.webp", "/assets/shirts/31-04-w.webp"],
       },
     ],
   },
@@ -1228,15 +1300,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/32-01-w.jpg", "/assets/shirts/32-03-w.jpg"],
+        images: ["/assets/shirts/32-01-w.webp", "/assets/shirts/32-03-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/32-04-w.jpg", "/assets/shirts/32-05-w.jpg"],
+        images: ["/assets/shirts/32-04-w.webp", "/assets/shirts/32-05-w.webp"],
       },
       {
         name: "black",
-        images: ["/assets/shirts/32-06-w.jpg", "/assets/shirts/32-07-w.jpg"],
+        images: ["/assets/shirts/32-06-w.webp", "/assets/shirts/32-07-w.webp"],
       },
     ],
   },
@@ -1252,15 +1324,15 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/33-01-w.jpg", "/assets/shirts/33-02-w.jpg"],
+        images: ["/assets/shirts/33-01-w.webp", "/assets/shirts/33-02-w.webp"],
       },
       {
         name: "green",
-        images: ["/assets/shirts/33-03-w.jpg", "/assets/shirts/33-04-w.jpg"],
+        images: ["/assets/shirts/33-03-w.webp", "/assets/shirts/33-04-w.webp"],
       },
       {
         name: "white",
-        images: ["/assets/shirts/33-05-w.jpg", "/assets/shirts/33-06-w.jpg"],
+        images: ["/assets/shirts/33-05-w.webp", "/assets/shirts/33-06-w.webp"],
       },
     ],
   },
@@ -1276,7 +1348,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/shirts/34-01-m.jpg", "/assets/shirts/34-02-m.jpg"],
+        images: ["/assets/shirts/34-01-m.webp", "/assets/shirts/34-02-m.webp"],
       },
     ],
   },
@@ -1292,7 +1364,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/34-03-w.jpg", "/assets/shirts/34-04-w.jpg"],
+        images: ["/assets/shirts/34-03-w.webp", "/assets/shirts/34-04-w.webp"],
       },
     ],
   },
@@ -1308,14 +1380,14 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/shirts/35-01-m.jpg", "/assets/shirts/35-02-m.jpg"],
+        images: ["/assets/shirts/35-01-m.webp", "/assets/shirts/35-02-m.webp"],
       },
       {
         name: "red",
         images: [
-          "/assets/shirts/35-03-m.jpg",
-          "/assets/shirts/35-04-m.jpg",
-          "/assets/shirts/35-02-m.jpg",
+          "/assets/shirts/35-03-m.webp",
+          "/assets/shirts/35-04-m.webp",
+          "/assets/shirts/35-02-m.webp",
         ],
       },
     ],
@@ -1332,7 +1404,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/pants/1-01-w.jpg", "/assets/pants/1-02-w.jpg"],
+        images: ["/assets/pants/1-01-w.webp", "/assets/pants/1-02-w.webp"],
       },
     ],
   },
@@ -1348,7 +1420,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/pants/2-01-m.jpg", "/assets/pants/2-02-m.jpg"],
+        images: ["/assets/pants/2-01-m.webp", "/assets/pants/2-02-m.webp"],
       },
     ],
   },
@@ -1364,7 +1436,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/1-01-m.jpg", "/assets/jackets/1-02-m.jpg"],
+        images: ["/assets/jackets/1-01-m.webp", "/assets/jackets/1-02-m.webp"],
       },
     ],
   },
@@ -1380,7 +1452,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/2-01-m.jpg", "/assets/jackets/2-02-m.jpg"],
+        images: ["/assets/jackets/2-01-m.webp", "/assets/jackets/2-02-m.webp"],
       },
     ],
   },
@@ -1396,7 +1468,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/2-03-w.jpg", "/assets/jackets/2-04-w.jpg"],
+        images: ["/assets/jackets/2-03-w.webp", "/assets/jackets/2-04-w.webp"],
       },
     ],
   },
@@ -1413,19 +1485,19 @@ export const products: Product[] = [
       {
         name: "black",
         images: [
-          "/assets/jackets/3-01-m.jpg",
-          "/assets/jackets/3-02-m.jpg",
-          "/assets/jackets/3-05-m.jpg",
-          "/assets/jackets/3-06-m.jpg",
+          "/assets/jackets/3-01-m.webp",
+          "/assets/jackets/3-02-m.webp",
+          "/assets/jackets/3-05-m.webp",
+          "/assets/jackets/3-06-m.webp",
         ],
       },
       {
         name: "gray",
         images: [
-          "/assets/jackets/3-03-m.jpg",
-          "/assets/jackets/3-04-m.jpg",
-          "/assets/jackets/3-07-m.jpg",
-          "/assets/jackets/3-08-m.jpg",
+          "/assets/jackets/3-03-m.webp",
+          "/assets/jackets/3-04-m.webp",
+          "/assets/jackets/3-07-m.webp",
+          "/assets/jackets/3-08-m.webp",
         ],
       },
     ],
@@ -1442,7 +1514,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/3-09-w.jpg", "/assets/jackets/3-10-w.jpg"],
+        images: ["/assets/jackets/3-09-w.webp", "/assets/jackets/3-10-w.webp"],
       },
     ],
   },
@@ -1458,7 +1530,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/jackets/4-01-m.jpg", "/assets/jackets/4-02-m.jpg"],
+        images: ["/assets/jackets/4-01-m.webp", "/assets/jackets/4-02-m.webp"],
       },
     ],
   },
@@ -1474,7 +1546,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: ["/assets/jackets/5-01-m.jpg", "/assets/jackets/5-02-m.jpg"],
+        images: ["/assets/jackets/5-01-m.webp", "/assets/jackets/5-02-m.webp"],
       },
     ],
   },
@@ -1490,7 +1562,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/6-01-w.jpg", "/assets/jackets/6-02-w.jpg"],
+        images: ["/assets/jackets/6-01-w.webp", "/assets/jackets/6-02-w.webp"],
       },
     ],
   },
@@ -1506,7 +1578,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "black",
-        images: ["/assets/jackets/6-03-m.jpg", "/assets/jackets/6-04-m.jpg"],
+        images: ["/assets/jackets/6-03-m.webp", "/assets/jackets/6-04-m.webp"],
       },
     ],
   },

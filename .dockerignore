@@ -1,0 +1,32 @@
+# Node modules no los queremos copiar (los instalamos en la imagen)
+node_modules
+.pnp
+.pnp.js
+
+# Archivos de lock que no usás en producción (opcional)
+*.lock
+
+# Logs
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Carpetas de build locales (dist)
+dist
+
+# Archivos de configuración locales que no necesitamos
+.vscode
+.idea
+.DS_Store
+
+# Tests y archivos de cobertura
+coverage
+*.test.*
+*.spec.*
+
+# Archivos de entorno locales
+.env
+.env.local
+.env.*.local

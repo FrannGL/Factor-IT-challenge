@@ -1,4 +1,4 @@
-import type { Gender, Size } from "@/features/product/interfaces/product";
+import type { Gender, Size } from "@/features/product/types";
 
 export interface FiltersState {
   color: string | null;

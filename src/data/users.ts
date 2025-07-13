@@ -19,6 +19,7 @@ const user1: User = {
           description:
             "Versión femenina con corte ergonómico y paneles laterales elásticos. Tejido Heavyweight sin peso extra. Costuras planas y etiqueta sin picor.",
           price: 43000,
+          quantity: 1,
           category: "hoodies",
           sizes: ["XS", "S", "M", "L"],
           gender: "women",
@@ -26,8 +27,8 @@ const user1: User = {
             {
               name: "black",
               images: [
-                "/assets/hoodies/6-03-w.jpg",
-                "/assets/hoodies/6-04-w.jpg",
+                "/assets/hoodies/6-03-w.webp",
+                "/assets/hoodies/6-04-w.webp",
               ],
             },
           ],
@@ -38,6 +39,7 @@ const user1: User = {
           description:
             "Buzo técnico para running con tejido DryVent. Costuras reflectantes 360°, capucha con visera integrada y bolsillo trasero con cierre hidrofóbico.",
           price: 47000,
+          quantity: 1,
           category: "hoodies",
           sizes: ["XS", "S", "M", "L"],
           gender: "men",
@@ -45,8 +47,8 @@ const user1: User = {
             {
               name: "black",
               images: [
-                "/assets/hoodies/7-01-m.jpg",
-                "/assets/hoodies/7-02-m.jpg",
+                "/assets/hoodies/7-01-m.webp",
+                "/assets/hoodies/7-02-m.webp",
               ],
             },
           ],
@@ -66,14 +68,15 @@ const user1: User = {
             "Diseño streetwear con mangas raglán y paneles laterales ventilados. Cuello alto desmontable y puños con ajuste de pulgar. Estampado resistente al lavado.",
           price: 41000,
           category: "hoodies",
+          quantity: 1,
           sizes: ["XS", "S", "M", "L", "XL"],
           gender: "men",
           colors: [
             {
               name: "black",
               images: [
-                "/assets/hoodies/8-01-m.jpg",
-                "/assets/hoodies/8-02-m.jpg",
+                "/assets/hoodies/8-01-m.webp",
+                "/assets/hoodies/8-02-m.webp",
               ],
             },
           ],
@@ -103,14 +106,15 @@ const user2: User = {
             "Diseño femenino con detalles en silicona reflectante y costuras contrastantes. Tejido French Terry de doble capa (320gsm) con cintura y puños elásticos premium. Capucha con doble capa para estructura perfecta.",
           price: 39000,
           category: "hoodies",
+          quantity: 1,
           sizes: ["XS", "S", "M", "L"],
           gender: "women",
           colors: [
             {
               name: "black",
               images: [
-                "/assets/hoodies/12-01-w.jpg",
-                "/assets/hoodies/12-02-w.jpg",
+                "/assets/hoodies/12-01-w.webp",
+                "/assets/hoodies/12-02-w.webp",
               ],
             },
           ],
@@ -140,21 +144,22 @@ const user3: User = {
             "Buzo unisex en algodón orgánico 380gsm con paneles de contraste. Tratamiento Enzyme Wash para suavidad inmediata y costuras reforzadas con hilo de poliéster. Mantiene su forma después de 50+ lavados.",
           price: 42000,
           category: "hoodies",
+          quantity: 1,
           sizes: ["XS", "S", "M", "L", "XL"],
           gender: "men",
           colors: [
             {
               name: "black",
               images: [
-                "/assets/hoodies/11-01-m.jpg",
-                "/assets/hoodies/11-02-m.jpg",
+                "/assets/hoodies/11-01-m.webp",
+                "/assets/hoodies/11-02-m.webp",
               ],
             },
             {
               name: "white",
               images: [
-                "/assets/hoodies/11-05-m.jpg",
-                "/assets/hoodies/11-06-m.jpg",
+                "/assets/hoodies/11-05-m.webp",
+                "/assets/hoodies/11-06-m.webp",
               ],
             },
           ],
