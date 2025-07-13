@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
-import { Icon } from "@iconify/react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Icon } from "@iconify/react";
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 export function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-  }, [darkMode]);
+  const [darkMode, setDarkMode] = useDarkMode();
 
   return (
     <button
