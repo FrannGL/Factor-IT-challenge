@@ -9,13 +9,11 @@ import { useCartStore } from "@/features/cart/store/useCartStore";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
 export function Store() {
-  const user = useUserStore((state) => state.user);
+  const { user } = useUserStore();
 
   const { color, size, gender, priceRange, category } = useFilterStore();
 
-  const selectedDate = useCartStore((state) => state.selectedDate);
-
-  const updateCartType = useCartStore((state) => state.updateCartType);
+  const { selectedDate, updateCartType } = useCartStore();
 
   const [minPrice, maxPrice] = priceRange;
 

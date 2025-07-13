@@ -21,6 +21,8 @@ export function CartProduct({ item }: CartProductProps) {
         <img
           src={imageSrc}
           alt={`${item.product.name} - ${item.color}`}
+          loading="lazy"
+          decoding="async"
           className="w-16 h-16 rounded object-cover"
         />
         <div className="flex-1">

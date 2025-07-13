@@ -54,6 +54,8 @@ export function UserPurchasesDialog({ open, onOpenChange, user }: Props) {
                         <img
                           src={product.colors[0]?.images[0]}
                           alt={product.name}
+                          loading="lazy"
+                          decoding="async"
                           className="w-12 h-12 object-cover rounded"
                         />
                         <div>

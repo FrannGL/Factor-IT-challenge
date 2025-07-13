@@ -21,6 +21,8 @@ export function ProductImages({
           key={currentImage.url}
           src={currentImage.url}
           alt={`Imagen color ${currentImage.color}`}
+          loading="lazy"
+          decoding="async"
           className="absolute top-0 left-0 w-full h-full object-cover"
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}

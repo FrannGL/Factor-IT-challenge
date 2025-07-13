@@ -16,6 +16,7 @@ export function UserProfile({ user }: { user: User }) {
         onClick={() => setOpen((prev) => !prev)}
         aria-haspopup="true"
         aria-expanded={open}
+        aria-label="Abrir menú de usuario"
         className="relative cursor-pointer rounded-full hover:scale-105 transition-transform"
       >
         <Avatar>
