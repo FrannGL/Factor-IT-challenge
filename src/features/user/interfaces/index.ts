@@ -1,2 +1,2 @@
-export { type User } from "./user";
-export { type Purchase } from "./purchase";
+export { type User } from "./user.interface";
+export { type Purchase } from "./purchase.interface";

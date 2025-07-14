@@ -1,4 +1,4 @@
-import { useColorFromURL } from "../hooks/useColorFormURL";
+import { useColorFromURL } from "../hooks/useColorFromURL";
 
 export function ColorSelector({
   colors,

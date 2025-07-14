@@ -1,4 +1,4 @@
-import type { Purchase } from "./purchase";
+import type { Purchase } from "./purchase.interface";
 
 export interface User {
   firstName: string;

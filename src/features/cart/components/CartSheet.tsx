@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import type { Purchase } from "@/features/user/interfaces/purchase";
+import type { Purchase } from "@/features/user/interfaces/purchase.interface";
 import { toast } from "sonner";
 import { format } from "date-fns";
 import {
