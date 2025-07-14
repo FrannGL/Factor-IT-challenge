@@ -99,7 +99,7 @@ export function CartSheet() {
           </ScrollArea>
         )}
 
-        {items.length && (
+        {items.length > 0 && (
           <SheetFooter className="mt-6 flex flex-col gap-2">
             <div className="flex justify-between text-sm font-medium">
               <span>Tipo de carrito:</span>
