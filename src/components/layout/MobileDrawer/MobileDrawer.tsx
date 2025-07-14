@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { Menu } from "lucide-react";
-import { Icon } from "@iconify/react";
 import {
   Sheet,
   SheetContent,
@@ -13,9 +12,19 @@ import {
 import { Button } from "@/components/ui/button";
 import { links } from "../Topbar/links";
 import { Filters, ActiveFilters } from "@/features/filters/components";
+import { useFilterStore } from "@/features/filters/store/useFilterStore";
+import { DatePicker } from "@/components/custom";
+import { UserSelector } from "@/features/user/components/UserSelector";
+import { Logo } from "../Sidebar/Logo";
 
 export function MobileDrawer() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const category = useFilterStore((state) => state.category);
+  const setCategory = useFilterStore((state) => state.setCategory);
+  const clearFilters = useFilterStore((state) => state.clearFilters);
+
+  const isCategoryActive = (label: string) => category === label.toLowerCase();
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -27,15 +36,30 @@ export function MobileDrawer() {
       </SheetTrigger>
       <SheetContent side="left" className="w-72 overflow-y-auto">
         <SheetHeader className="text-left">
+          <Logo />
           <SheetTitle>Menú</SheetTitle>
         </SheetHeader>
 
-        <div className="mt-6 space-y-6">
-          <nav className="space-y-2">
+        <div className="space-y-6">
+          <nav className="space-y-1">
             {links.map((link) => (
               <SheetClose key={link.label} asChild>
-                <button className="flex items-center space-x-3 px-3 py-2 text-sm rounded-md hover:bg-accent transition-colors w-full text-left">
-                  <Icon icon={link.icon} className="h-4 w-4" />
+                <button
+                  key={link.label}
+                  type="button"
+                  onClick={() => {
+                    if (link.label === "Ver Todos") {
+                      clearFilters();
+                    } else {
+                      setCategory(link.label.toLowerCase());
+                    }
+                  }}
+                  className={`cursor-pointer flex items-center gap-2 px-2 py-2 text-sm transition-all duration-200 border-b-2 ${
+                    isCategoryActive(link.label)
+                      ? "border-primary text-primary"
+                      : "border-transparent hover:border-primary hover:text-primary"
+                  }`}
+                >
                   <span>{link.label}</span>
                 </button>
               </SheetClose>
@@ -46,6 +70,11 @@ export function MobileDrawer() {
             <h3 className="text-sm font-semibold px-3 mb-2">Filtros</h3>
             <Filters />
             <ActiveFilters />
+          </div>
+
+          <div className="flex flex-col gap-2 p-4 border-t">
+            <DatePicker />
+            <UserSelector />
           </div>
         </div>
       </SheetContent>
