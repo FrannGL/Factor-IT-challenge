@@ -56,8 +56,6 @@ npm run dev
 
 La aplicación estará disponible en http://localhost:5173.
 
-Con estos pasos, tendrás la aplicación lista para su uso. Si encuentras algún problema, consulta la sección de problemas comunes en la documentación o abre un issue en el repositorio.
-
 # Docker
 
 Si prefieres ejecutar el proyecto en un contenedor Docker, puedes usar la configuración proporcionada.
