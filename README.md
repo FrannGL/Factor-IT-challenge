@@ -20,7 +20,7 @@ Proyecto de e-commerce moderno desarrollado en **React 19 + Vite**, con enfoque 
 
 ## Instalación
 
-Sigue estos pasos para instalar y ejecutar el proyecto **Patrimonio** en tu entorno local:
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 
 ### 1. Clonar el repositorio
 
