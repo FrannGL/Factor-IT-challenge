@@ -16,4 +16,20 @@ export default defineConfig({
     environment: "jsdom",
     exclude: [...configDefaults.exclude, "e2e"],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react")) return "react";
+            if (id.includes("tailwindcss")) return "tailwind";
+            if (id.includes("@radix-ui")) return "radix";
+            if (id.includes("@shadcn")) return "shadcn";
+            if (id.includes("lucide-react")) return "icons";
+            return "vendor";
+          }
+        },
+      },
+    },
+  },
 });

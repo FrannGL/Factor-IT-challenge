@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Icon } from "@iconify/react";
+import { Suspense, lazy } from "react";
 
 import { products } from "@/data/products";
-import { ProductCard } from "@/features/product/components/ProductCard";
 import { ProductCardSkeleton } from "@/features/product/components/ProductCardSkeleton";
 
 import { useFilterStore } from "@/features/filters/store/useFilterStore";
@@ -10,13 +10,16 @@ import { useUserStore } from "@/features/user/store/useUserStore";
 import { useCartStore } from "@/features/cart/store/useCartStore";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 
-export function Store() {
-  const [initialLoading, setInitialLoading] = useState(true);
+const ProductCard = lazy(() =>
+  import("@/features/product/components/ProductCard").then((mod) => ({
+    default: mod.ProductCard,
+  }))
+);
 
+export function Store() {
   const { user } = useUserStore();
   const { color, size, gender, priceRange, category } = useFilterStore();
   const { selectedDate, updateCartType } = useCartStore();
-
   const [minPrice, maxPrice] = priceRange;
 
   const filteredProducts = products.filter((product) => {
@@ -47,18 +50,6 @@ export function Store() {
     updateCartType();
   }, [user, selectedDate, updateCartType]);
 
-  //  ----- > EFECTO PARA SIMULAR RESPUESTA DE LA API
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setInitialLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  // ----------------------------------------------
-
   return (
     <div className="p-6 bg-background min-h-screen">
       {filteredProducts.length === 0 ? (
@@ -68,13 +59,15 @@ export function Store() {
       ) : (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {initialLoading
-              ? Array.from({ length: 8 }).map((_, i) => (
-                  <ProductCardSkeleton key={`initial-skeleton-${i}`} />
-                ))
-              : displayedItems.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
+            <Suspense
+              fallback={Array.from({ length: 8 }).map((_, i) => (
+                <ProductCardSkeleton key={`lazy-skeleton-${i}`} />
+              ))}
+            >
+              {displayedItems.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </Suspense>
 
             {isLoading &&
               Array.from({ length: 8 }).map((_, i) => (
