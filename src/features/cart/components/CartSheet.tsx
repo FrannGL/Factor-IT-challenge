@@ -87,7 +87,7 @@ export function CartSheet() {
             No hay productos en el carrito.
           </div>
         ) : (
-          <ScrollArea className="h-[calc(100vh-160px)] pr-2 mt-4">
+          <ScrollArea className="h-[calc(100vh-160px)] lg:h-[calc(100vh-385px)] pr-2 mt-4">
             <div className="space-y-6 px-4">
               {items.map((item) => (
                 <CartProduct

@@ -26,8 +26,6 @@ export function ProductImages({
           decoding="async"
           className="absolute top-0 left-0 w-full h-full object-cover"
           initial={isFirstRender ? false : { opacity: 0, scale: 0.98 }}
-          width={400}
-          height={500}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.1, ease: "easeInOut" }}
