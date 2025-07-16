@@ -65,16 +65,19 @@ export function CartSheet() {
     addPurchase(purchase);
 
     clearCart();
-    setOpen(false);
     toast.success("Compra finalizada con éxito!");
+    setOpen(false);
   };
 
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
+    <Sheet open={open} onOpenChange={setOpen} data-slot="sheet-overlay">
       <SheetTrigger asChild>
         <CartButton />
       </SheetTrigger>
-      <SheetContent className="w-full sm:w-[400px] flex flex-col">
+      <SheetContent
+        className="w-full sm:w-[400px] flex flex-col"
+        data-testid="cart-sheet"
+      >
         <SheetHeader>
           <SheetTitle>Tu carrito</SheetTitle>
           <SheetDescription>
@@ -83,11 +86,17 @@ export function CartSheet() {
         </SheetHeader>
 
         {items.length === 0 ? (
-          <div className="flex-1 flex flex-col justify-center items-center px-4">
+          <div
+            className="flex-1 flex flex-col justify-center items-center px-4"
+            data-testid="cart-empty"
+          >
             No hay productos en el carrito.
           </div>
         ) : (
-          <ScrollArea className="h-[calc(100vh-160px)] lg:h-[calc(100vh-385px)] pr-2 mt-4">
+          <ScrollArea
+            className="h-[calc(100vh-160px)] lg:h-[calc(100vh-385px)] pr-2 mt-4"
+            data-testid="cart-items"
+          >
             <div className="space-y-6 px-4">
               {items.map((item) => (
                 <CartProduct
@@ -100,12 +109,22 @@ export function CartSheet() {
         )}
 
         {items.length > 0 && (
-          <SheetFooter className="mt-6 flex flex-col gap-2">
-            <div className="flex justify-between text-sm font-medium">
+          <SheetFooter
+            className="mt-6 flex flex-col gap-2"
+            data-testid="cart-footer"
+          >
+            <div
+              className="flex justify-between text-sm font-medium"
+              data-testid="cart-type"
+            >
               <span>Tipo de carrito:</span>
               <span>{cartType}</span>
             </div>
-            <div className="flex justify-between text-sm font-medium">
+
+            <div
+              className="flex justify-between text-sm font-medium"
+              data-testid="cart-subtotal"
+            >
               <span>Subtotal:</span>
               <span className="flex flex-col items-end">
                 <span>${formatNumberWithThousands(subtotal)} ARS</span>
@@ -113,11 +132,12 @@ export function CartSheet() {
             </div>
 
             {discountBreakdown.length > 0 && (
-              <div className="space-y-1">
+              <div className="space-y-1" data-testid="cart-discounts">
                 {discountBreakdown.map((discount, index) => (
                   <div
                     key={index}
                     className="flex justify-between text-sm text-green-600"
+                    data-testid={`cart-discount-${index}`}
                   >
                     <span>{discount.label}:</span>
                     <span>
@@ -128,11 +148,16 @@ export function CartSheet() {
               </div>
             )}
 
-            <div className="flex justify-between text-lg font-semibold">
+            <div
+              className="flex justify-between text-lg font-semibold"
+              data-testid="cart-total"
+            >
               <span>Total:</span>
               <span>${formatNumberWithThousands(total)} ARS</span>
             </div>
+
             <Button
+              data-testid="finalize-purchase-button"
               className="w-full cursor-pointer"
               disabled={items.length === 0}
               onClick={handleFinalizePurchase}
@@ -140,6 +165,7 @@ export function CartSheet() {
               Finalizar compra
             </Button>
             <Button
+              data-testid="clear-cart-button"
               variant="ghost"
               className="w-full cursor-pointer"
               onClick={clearCart}

@@ -16,6 +16,7 @@ export function SizeList({ sizes, selectedSize, onSelect }: SizeListProps) {
               ? "bg-gray-300 text-black border-primary hover:bg-gray-400 dark:bg-gray-200 dark:hover:bg-white"
               : "border-gray-300 text-foreground hover:bg-gray-200 dark:hover:bg-gray-800"
           }`}
+          data-testid={`size-button`}
         >
           {size}
         </button>

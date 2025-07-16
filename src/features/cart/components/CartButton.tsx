@@ -13,6 +13,7 @@ export function CartButton({ onClick }: Props) {
       onClick={onClick}
       className="relative hover:scale-110 transition-transform pt-1 cursor-pointer"
       aria-label="Carrito"
+      data-testid="open-cart-button"
     >
       <Icon
         icon="mdi:cart"

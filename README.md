@@ -82,17 +82,26 @@ La aplicación estará disponible en http://localhost:3000.
 
 ## Ejecutar tests 🧪
 
-El proyecto está preparado para testing con:
+El proyecto está preparado para testing unitarios con:
 
 - **Vitest** – Framework de testeo rápido y compatible con Jest.
 - **Testing Library** – Utilidades para testear componentes React desde la perspectiva del usuario.
+- **Cypress** - Framework para pruebas end-to-end (E2E) que simula la experiencia real del usuario en el navegador.
 - **JSDOM** – Entorno simulado para pruebas en Node.
 - **Husky** – Ganchos de Git para asegurar calidad (como correr tests o linting antes de hacer push).
 
-### Comandos para correr tests:
+### Comandos para correr test unitarios:
 
 - `npm run test`  
   Ejecuta todos los tests en modo _headless_ (sin interfaz gráfica), ideal para integración continua o para correr en la terminal.
 
 - `npm run test:ui`  
   Ejecuta los tests en modo interactivo con interfaz gráfica, permitiendo ver resultados en tiempo real y hacer debugging más fácil.
+
+### Comandos para correr test e2e:
+
+- `npm run cy:open`  
+  Abre la interfaz gráfica de Cypress para ejecutar tests interactivos y hacer debugging visual.
+
+- `npm run cy:run`  
+  Ejecuta los tests E2E en modo headless (sin interfaz gráfica), útil para integración continua.

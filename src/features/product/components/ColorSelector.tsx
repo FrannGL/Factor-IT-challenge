@@ -26,6 +26,7 @@ export function ColorSelector({
           }`}
           style={{ backgroundColor: name }}
           aria-label={`Seleccionar color ${name}`}
+          data-testid={`color-${name}`}
         />
       ))}
     </div>
