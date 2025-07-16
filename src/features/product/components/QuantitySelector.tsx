@@ -31,8 +31,9 @@ export function QuantitySelector({
         min={1}
         value={quantity}
         onChange={onChange}
+        name="quantity"
         className="w-10 text-center outline-none bg-white text-gray-900
-                   dark:bg-gray-900 dark:text-white"
+             dark:bg-gray-900 dark:text-white"
         aria-label="Cantidad"
         style={{
           MozAppearance: "textfield",

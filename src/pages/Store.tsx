@@ -88,7 +88,7 @@ export function Store() {
                   </span>
                 </>
               ) : (
-                <div className="text-sm text-muted-foreground opacity-50">
+                <div className="text-sm text-muted-foreground">
                   Scroll para cargar más productos
                 </div>
               )}
