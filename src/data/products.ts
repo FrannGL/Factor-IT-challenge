@@ -325,10 +325,7 @@ export const products: Product[] = [
     colors: [
       {
         name: "gray",
-        images: [
-          "/assets/accessories/1.1.webp",
-          "/assets/accessories/1.1.webp",
-        ],
+        images: ["/assets/accessories/1.1.webp"],
       },
       {
         name: "white",
@@ -644,7 +641,7 @@ export const products: Product[] = [
   },
   {
     id: "accessory-14",
-    name: "Gorra clásica #1",
+    name: "Media con diseño #3",
     description:
       "Diseño vintage con visera rígida y ojales metálicos. Forro interior absorbente.",
     price: 14000,
@@ -660,7 +657,7 @@ export const products: Product[] = [
   },
   {
     id: "accessory-15",
-    name: "Gorra clásica #2",
+    name: "Media con diseño #4",
     description:
       "Perfil bajo con cierre ajustable de hebilla. Costuras reforzadas a prueba de desgaste.",
     price: 12500,
@@ -676,7 +673,7 @@ export const products: Product[] = [
   },
   {
     id: "accessory-16",
-    name: "Gorra clásica #3",
+    name: "Media con diseño #5",
     description:
       "Modelo unisex con paneles curvos. Banda interior de terciopelo para mayor confort.",
     price: 13000,
@@ -692,7 +689,7 @@ export const products: Product[] = [
   },
   {
     id: "accessory-17",
-    name: "Gorra clásica #4",
+    name: "Media con diseño #6",
     description:
       "Línea eco-friendly: fabricada con algodón reciclado y tintes naturales.",
     price: 15000,
