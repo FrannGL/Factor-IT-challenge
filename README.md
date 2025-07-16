@@ -4,19 +4,21 @@ Proyecto de e-commerce moderno desarrollado en **React 19 + Vite**, con enfoque 
 
 ## 🚀 Tech Stack
 
-| Herramienta            | Descripción                                                                        |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **React 19**           | Biblioteca principal para construir la UI                                          |
-| **Vite 7**             | Empaquetador ultra rápido con soporte moderno                                      |
-| **TypeScript**         | Tipado estático para mayor robustez y autocompletado                               |
-| **Tailwind CSS 4**     | Framework de estilos utilitario con soporte para dark mode                         |
-| **shadcn/ui**          | Componentes UI accesibles y estilizados, construidos sobre Radix UI y Tailwind CSS |
-| **Zustand**            | Manejo de estado global simple y escalable                                         |
-| **React Router DOM 7** | Enrutamiento declarativo para SPAs                                                 |
-| **Framer Motion**      | Animaciones suaves y accesibles                                                    |
-| **Radix UI**           | Componentes accesibles de bajo nivel (Dialog, ScrollArea, Switch, etc.)            |
-| **Iconify + Lucide**   | Sistema flexible de íconos                                                         |
-| **Sonner**             | Notificaciones modernas y configurables                                            |
+| Herramienta               | Descripción                                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------- |
+| **React 19**              | Biblioteca principal para construir la UI                                          |
+| **Vite 7**                | Empaquetador ultra rápido con soporte moderno                                      |
+| **TypeScript**            | Tipado estático para mayor robustez y autocompletado                               |
+| **Tailwind CSS 4**        | Framework de estilos utilitario con soporte para dark mode                         |
+| **shadcn/ui**             | Componentes UI accesibles y estilizados, construidos sobre Radix UI y Tailwind CSS |
+| **Zustand**               | Manejo de estado global simple y escalable                                         |
+| **React Router DOM 7**    | Enrutamiento declarativo para SPAs                                                 |
+| **Framer Motion**         | Animaciones suaves y accesibles                                                    |
+| **Radix UI**              | Componentes accesibles de bajo nivel (Dialog, ScrollArea, Switch, etc.)            |
+| **Iconify + Lucide**      | Sistema flexible de íconos                                                         |
+| **Sonner**                | Notificaciones modernas y configurables                                            |
+| **React Testing Library** | Utilidades para testear componentes React desde la perspectiva del usuario         |
+| **Cypress**               | Framework para testing end-to-end, integración y pruebas funcionales con UI real   |
 
 ## Instalación
 
