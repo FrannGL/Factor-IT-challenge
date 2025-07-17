@@ -64,9 +64,7 @@ Si prefieres ejecutar el proyecto en un contenedor Docker, puedes usar la config
 
 ### Construir la imagen Docker
 
-1. Primero, asegúrate de tener Docker instalado en tu sistema.
-
-2. En el directorio raíz del proyecto, ejecuta el siguiente comando para construir la imagen:
+En el directorio raíz del proyecto, ejecuta el siguiente comando para construir la imagen:
 
 ```
 docker build -t factor-it-challenge .
