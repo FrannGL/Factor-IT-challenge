@@ -1,6 +1,6 @@
 # 🛒 Factor IT Challenge
 
-Proyecto de e-commerce moderno desarrollado en **React 19 + Vite**, con enfoque en rendimiento, diseño responsive, y una arquitectura mantenible basada en componentes y estados globales.
+Proyecto de e-commerce moderno desarrollado en **React 19 + Vite**, con enfoque en rendimiento, diseño responsive, y una arquitectura mantenible basada en **screaming architecture**.
 
 ## 🚀 Tech Stack
 
